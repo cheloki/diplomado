@@ -1,6 +1,6 @@
 import { Sequelize } from 'sequelize';
 import 'dotenv/config'
-import { reject } from 'bcrypt/promises';
+
 
 const sequelize = new Sequelize(
   process.env.DB_DATABASE,
@@ -17,6 +17,7 @@ const sequelize = new Sequelize(
         rejectUnauthorized:false,
       }
     }
+      
   }
 );
 
